@@ -23,7 +23,7 @@ def count_split(dataset_dir: Path, split: str):
     n_images = 0
     n_background = 0
     for f in label_dir.glob("*.txt"):
-        lines = [l.strip() for l in f.read_text().splitlines() if l.strip()]
+        lines = [ln.strip() for ln in f.read_text().splitlines() if ln.strip()]
         n_images += 1
         if not lines:
             n_background += 1
