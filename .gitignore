@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# YOLO / Ultralytics outputs
+runs/
+*.pt
+*.onnx
+!sample_dataset/**/*.txt
+yolov*/
+wandb/
+
+# Dataset cache files written by Ultralytics
+*.cache
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Test artifacts
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.coverage

@@ -1,0 +1,14 @@
+# Dataset config for the CI/CD test project.
+# Paths are relative to this file so it works on any machine / inside CI runners.
+path: ./sample_dataset
+train: train/images
+val: val/images
+test: test/images
+
+nc: 5
+names:
+  0: Gate_In
+  1: Gate_Out
+  2: Gate_6
+  3: In_Gate_Zone
+  4: Gate_Metal
